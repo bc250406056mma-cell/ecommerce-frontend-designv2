@@ -1,0 +1,302 @@
+{
+  "$schema": "https://specifyapp.com/schema/tokens/1.0",
+  "name": "Ecommerce Design System",
+  "description": "Design tokens extracted from D:\\ecommerce-frontend-design\\css\\index.css",
+  "colors": {
+    "brand": {
+      "primary": { "value": "#1a1a1a", "description": "Primary text & brand color" },
+      "accent": { "value": "#c5a059", "description": "Gold accent - CTAs, highlights" },
+      "accentHover": { "value": "#e0bc7a", "description": "Accent hover state" }
+    },
+    "background": {
+      "white": { "value": "#ffffff", "description": "Main body background" },
+      "soft": { "value": "#fcfcfc", "description": "Soft background for sections" },
+      "card": { "value": "#f9f9f9", "description": "Product card background" },
+      "input": { "value": "#f5f5f5", "description": "Search & input background" },
+      "inputFocus": { "value": "#ffffff", "description": "Input focus state" }
+    },
+    "text": {
+      "dark": { "value": "#222222", "description": "Body text" },
+      "muted": { "value": "#777777", "description": "Muted/secondary text" },
+      "input": { "value": "#222222", "description": "Input text color" }
+    },
+    "footer": {
+      "bg": { "value": "#1a1a1a", "description": "Footer background" },
+      "text": { "value": "#b0b0b0", "description": "Footer body text" },
+      "textStrong": { "value": "#ffffff", "description": "Footer headings" },
+      "divider": { "value": "#2a2a2a", "description": "Footer divider line" },
+      "bottomText": { "value": "#666666", "description": "Footer bottom bar text" }
+    },
+    "border": {
+      "default": { "value": "#eeeeee", "description": "Default border color" }
+    },
+    "icon": {
+      "muted": { "value": "#999999", "description": "Icon color" }
+    },
+    "themes": {
+      "dark": {
+        "description": "Dark theme overrides",
+        "primary": "#e5e7eb",
+        "accent": "#f2c879",
+        "accentHover": "#ffe0a8",
+        "bgWhite": "#0f172a",
+        "bgSoft": "#111827",
+        "textDark": "#f3f4f6",
+        "textMuted": "#94a3b8",
+        "border": "#334155",
+        "footerBg": "#0b1220"
+      },
+      "sepia": {
+        "description": "Sepia theme overrides",
+        "primary": "#4b3425",
+        "accent": "#a8703f",
+        "bgWhite": "#f8f1e6",
+        "bgSoft": "#f3e7d5",
+        "textDark": "#3b2a1f",
+        "textMuted": "#6c5645",
+        "border": "#dcc8af",
+        "footerBg": "#4b3425"
+      },
+      "ocean": {
+        "description": "Ocean theme overrides",
+        "primary": "#062b3a",
+        "accent": "#2ba8c2",
+        "bgWhite": "#eaf8fb",
+        "bgSoft": "#d7f0f6",
+        "textDark": "#093042",
+        "textMuted": "#3b6471",
+        "border": "#b4d8e2",
+        "footerBg": "#062b3a"
+      }
+    }
+  },
+  "typography": {
+    "fontFamilies": {
+      "sans": { "value": "{Plus Jakarta Sans, Lato, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif}", "description": "Body & UI text" },
+      "serif": { "value": "{Playfair Display, ui-serif, Georgia, Times New Roman, serif}", "description": "Headings & display" }
+    },
+    "fontWeights": {
+      "light": 300,
+      "regular": 400,
+      "bold": 700,
+      "black": 900
+    },
+    "fontSizes": {
+      "micro": { "value": "0.78rem (12.5px)", "description": "Smallest caption/text" },
+      "body": { "value": "0.92rem (14.7px)", "description": "Default body text" },
+      "lead": { "value": "1.05rem (16.8px)", "description": "Lead/intro text" },
+      "h3": { "value": "1.25rem (20px)", "description": "Section heading 3" },
+      "h2": { "value": "1.55rem (24.8px)", "description": "Section heading 2" },
+      "h1": { "value": "2rem (32px)", "description": "Hero title" },
+      "heroDisplay": { "value": "4rem (64px)", "description": "Hero main heading" }
+    },
+    "lineHeights": {
+      "tight": 1.12,
+      "snug": 1.32,
+      "body": 1.7
+    },
+    "letterSpacing": {
+      "tight": "0.2px",
+      "wide": "1.6px",
+      "wider": "2px"
+    }
+  },
+  "spacing": {
+    "container": "1240px",
+    "gutter": "32px",
+    "sectionPadding": "80px",
+    "gridGaps": {
+      "productGrid": "30px",
+      "featureGrid": "20px",
+      "navLinks": "42px",
+      "headerIcons": "18px"
+    }
+  },
+  "layout": {
+    "hero": {
+      "height": "80vh",
+      "overlay": "rgba(255,255,255,0.7)",
+      "backgroundImage": "unsplash.com/photo-1441986300917-64674bd600d8"
+    },
+    "featureGrid": {
+      "template": "1.2fr 1fr 1fr",
+      "cardMinHeight": "340px",
+      "cardLargeMinHeight": "420px",
+      "borderRadius": "14px"
+    },
+    "productGrid": {
+      "template": "repeat(4, minmax(0, 1fr))",
+      "cardBorderRadius": "14px",
+      "imageAspectRatio": "3/4"
+    },
+    "promoStrip": {
+      "template": "repeat(3, minmax(0, 1fr))",
+      "itemBorderRadius": "12px"
+    },
+    "cartPanel": {
+      "width": "min(420px, 92vw)",
+      "transition": "transform 0.3s ease"
+    },
+    "authLayout": {
+      "template": "1.1fr 0.9fr",
+      "cardBorderRadius": "14px",
+      "maxWidth": "1100px"
+    },
+    "footer": {
+      "template": "repeat(auto-fit, minmax(220px, 1fr))",
+      "gap": "50px"
+    },
+    "productDetails": {
+      "template": "1.05fr 0.95fr",
+      "galleryBorderRadius": "16px",
+      "galleryAspectRatio": "4/5"
+    }
+  },
+  "effects": {
+    "headerShadow": "0 2px 15px rgba(0,0,0,0.03)",
+    "cardShadow": "0 4px 14px rgba(0,0,0,0.08)",
+    "cardHoverShadow": "0 20px 36px rgba(0,0,0,0.12)",
+    "featureHoverShadow": "0 18px 36px rgba(0,0,0,0.18)",
+    "promoHoverShadow": "0 14px 28px rgba(0,0,0,0.1)",
+    "cartShadow": "-8px 0 24px rgba(0,0,0,0.18)",
+    "authShadow": "0 10px 28px rgba(0,0,0,0.08)",
+    "profileDropdownShadow": "0 14px 40px rgba(0,0,0,0.16)",
+    "transition": "all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1)"
+  },
+  "components": {
+    "buttons": {
+      "primary": {
+        "backgroundColor": "#1a1a1a",
+        "color": "#ffffff",
+        "padding": "1rem 2.5rem",
+        "fontSize": "0.8rem",
+        "fontWeight": 700,
+        "letterSpacing": "2px",
+        "textTransform": "uppercase",
+        "hoverBg": "#c5a059",
+        "hoverTransform": "translateY(-2px)"
+      },
+      "secondary": {
+        "border": "1px solid #1a1a1a",
+        "color": "#1a1a1a",
+        "padding": "1rem 2rem",
+        "backgroundColor": "transparent",
+        "fontSize": "0.78rem",
+        "fontWeight": 700,
+        "letterSpacing": "1.6px",
+        "textTransform": "uppercase"
+      },
+      "productAction": {
+        "padding": "0.55rem 0.8rem",
+        "borderRadius": "6px",
+        "fontSize": "0.75rem",
+        "fontWeight": 700,
+        "letterSpacing": "1px",
+        "textTransform": "uppercase"
+      },
+      "addToCart": {
+        "backgroundColor": "#1a1a1a",
+        "color": "#ffffff",
+        "hoverBg": "#c5a059"
+      }
+    },
+    "nav": {
+      "linkFontSize": "0.78rem",
+      "linkFontWeight": 700,
+      "linkLetterSpacing": "2px",
+      "linkTextTransform": "uppercase",
+      "linkHoverColor": "#c5a059",
+      "underlineEffect": "1px height, centered"
+    },
+    "inputs": {
+      "search": {
+        "borderRadius": "4px",
+        "padding": "10px 15px",
+        "backgroundColor": "#f5f5f5",
+        "focusBorderColor": "#c5a059"
+      },
+      "auth": {
+        "borderRadius": "10px",
+        "padding": "12px",
+        "border": "1px solid #eeeeee"
+      }
+    },
+    "cards": {
+      "borderRadius": "14px",
+      "border": "1px solid #eeeeee",
+      "hoverTransform": "translateY(-6px)",
+      "hoverBorderColor": "#c5a059"
+    }
+  },
+  "pages": [
+    {
+      "name": "Home",
+      "path": "index.html",
+      "sections": ["Top bar + Header", "Navigation", "Hero (80vh)", "Featured Categories", "Promo Strip (3 columns)", "Featured Picks (4-column grid)", "Footer"]
+    },
+    {
+      "name": "About",
+      "path": "pages/about.html",
+      "sections": ["Header", "Page Content", "Footer"]
+    },
+    {
+      "name": "Contact",
+      "path": "pages/contact.html",
+      "sections": ["Header", "Contact Form", "Footer"]
+    },
+    {
+      "name": "Sign In",
+      "path": "pages/sign-in.html",
+      "sections": ["Header", "Auth Wrap (2-column: hero left, form right)", "Footer"]
+    },
+    {
+      "name": "Sign Up",
+      "path": "pages/sign-up.html",
+      "sections": ["Header", "Auth Wrap (2-column)", "Footer"]
+    },
+    {
+      "name": "New Arrivals",
+      "path": "products/new-arrivals.html",
+      "sections": ["Header", "Product Grid", "Footer"]
+    },
+    {
+      "name": "Shop All",
+      "path": "products/shop-all.html",
+      "sections": ["Header", "Product Grid + Load More", "Footer"]
+    },
+    {
+      "name": "Best Sellers",
+      "path": "products/best-sellers.html",
+      "sections": ["Header", "Product Grid", "Footer"]
+    },
+    {
+      "name": "Collections",
+      "path": "products/collections.html",
+      "sections": ["Header", "Collection Grid", "Footer"]
+    },
+    {
+      "name": "Product Details",
+      "description": "2-column: gallery left, details right",
+      "sections": ["Header", "Product Details Page", "Details Panels (shipping, care)", "Footer"]
+    },
+    {
+      "name": "Payment",
+      "path": "payments/payment_methods.html",
+      "sections": ["Header", "Payment Card", "Footer"]
+    },
+    {
+      "name": "Receipt",
+      "sections": ["Receipt Card Modal", "Order Summary Table", "Meta Grid"]
+    },
+    {
+      "name": "Policy Pages",
+      "description": "Privacy, Terms, FAQ, Careers, Shipping, Returns, Size Guide, Store Locator, Affiliates",
+      "sections": ["Header", "Policy Header", "Policy Sections (collapsible cards)", "Footer"]
+    },
+    {
+      "name": "Help Center",
+      "path": "footer/help-center.html",
+      "sections": ["Header", "FAQ Accordion", "Footer"]
+    }
+  ]
+}
